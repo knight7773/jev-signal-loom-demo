@@ -1,0 +1,260 @@
+{
+  "review_date": "2026-10-18",
+  "method": "官方公开政策和浏览器资产清单人工核验",
+  "programs": [
+    {
+      "id": 0,
+      "name": "Hyperliquid",
+      "reviewed": true,
+      "scope": "仅测试网 / 本地",
+      "relevance": "API 相关，邮箱范围未确认",
+      "assets": [
+        "节点与 API 服务（功能范围描述，非域名白名单）"
+      ],
+      "environment": "测试网或本地分叉；禁止主网测试。测试网实验功能另有限制。",
+      "summary": "官方计划覆盖节点/API 逻辑和可用性问题，未单独列出邮箱或账户 Token 流程。",
+      "next_step": "先映射测试网/API 资产与计划范围，采用受控环境；不在主网尝试账号操作。",
+      "sources": [
+        "https://hyperliquid.gitbook.io/hyperliquid-docs/bug-bounty-program"
+      ],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 1,
+      "name": "Aster",
+      "reviewed": true,
+      "scope": "Web 范围有限",
+      "relevance": "未明确覆盖邮箱变更",
+      "assets": [
+        "https://www.asterdex.com/en"
+      ],
+      "environment": "信息页列出主网/公共测试网限制，要求本地分叉；Web 测试环境需要澄清。",
+      "summary": "Web & App 当前列出主页和七类影响；不能将主页范围扩大为所有 API，也不能从 Web 奖励推导邮箱改绑属于范围。Web 最高 7,500 美元有资金/私钥影响条件。",
+      "next_step": "确认账号 API、邮箱变更影响和测试环境是否获准，再准备受控账户。",
+      "sources": [
+        "https://immunefi.com/bug-bounty/aster/information/",
+        "https://immunefi.com/bug-bounty/aster/scope/"
+      ],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 2,
+      "name": "Lighter",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 3,
+      "name": "EVEDEX",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 4,
+      "name": "edgeX",
+      "reviewed": true,
+      "scope": "账号影响明确 / 环境待澄清",
+      "relevance": "直接相关",
+      "assets": [
+        "https://pro.edgex.exchange/",
+        "https://quote.edgex.exchange/",
+        "https://spot.edgex.exchange/",
+        "https://spot-quote.edgex.exchange/"
+      ],
+      "environment": "资产包含生产域名，但默认条款要求本地分叉；Web/API 远程测试例外未确认。",
+      "summary": "范围明确包含未授权修改注册信息、邮箱及泄露用户私密资料。资产在范围内，不等于所有测试方式获准。",
+      "next_step": "就 Web/API 远程验证环境取得明确规则后，仅以自有 A/B 测试账户做最小验证。",
+      "sources": [
+        "https://immunefi.com/bug-bounty/edgex/information/",
+        "https://immunefi.com/bug-bounty/edgex/scope/"
+      ],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 5,
+      "name": "GRVT",
+      "reviewed": true,
+      "scope": "候选 / 已找到测试网文档",
+      "relevance": "直接相关",
+      "assets": [
+        "官方 API 文档列出 https://edge.testnet.grvt.io（认证服务）；不等于完整赏金域名白名单"
+      ],
+      "environment": "鼓励测试网；官方 API 文档列出测试网认证服务。禁止主网干扰/损失、第三方服务测试。邮箱接口的具体范围仍待确认。",
+      "summary": "官方政策明确涉及用户账户、认证及 Web2/Web3 安全。漏洞奖金依影响评估，并非固定上限。",
+      "next_step": "由用户准备两个受控测试网账户并完成相关条款；确认拟测邮箱接口范围，再制定最小验证。",
+      "sources": [
+        "https://help.grvt.io/en/articles/12310634-grvt-bug-bounty-program",
+        "https://api-docs.grvt.io/"
+      ],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 6,
+      "name": "ApeX Omni",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 7,
+      "name": "Antarctic",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 8,
+      "name": "Aevo",
+      "reviewed": true,
+      "scope": "合约优先 / 账号范围未确认",
+      "relevance": "非当前邮箱目标首选",
+      "assets": [
+        "当前计划聚焦智能合约"
+      ],
+      "environment": "本地分叉；默认禁止主网/公共测试网部署代码测试。",
+      "summary": "该 Immunefi 计划围绕合约和资金风险，不能用其 300,000 美元最高奖金推导 Web 账户测试权限。",
+      "next_step": "如果目标仍是邮箱/会话安全，另找明确涵盖 Web/API 的政策。",
+      "sources": [
+        "https://immunefi.com/bug-bounty/Aevo/information/"
+      ],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 9,
+      "name": "Ondo Perps",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 10,
+      "name": "dYdX v4",
+      "reviewed": true,
+      "scope": "运营主体不匹配",
+      "relevance": "该政策不能覆盖全部 v4 前端",
+      "assets": [
+        "Foundation 自身网站/服务；不是所有 v4 第三方前端"
+      ],
+      "environment": "需按实际前端运营主体的政策核验。",
+      "summary": "Foundation 条款页面仍标注 2022-12-28，且明确不运营公开 v4 软件与第三方基础设施；不能将此政策套用到任意 v4 网站。",
+      "next_step": "先确定需要评估的前端运营方和其安全政策。",
+      "sources": [
+        "https://www.dydx.foundation/bug-bounty-terms"
+      ],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 11,
+      "name": "Paradex",
+      "reviewed": true,
+      "scope": "六项合约 / 非通用 Web 范围",
+      "relevance": "未确认邮箱或 JWT 范围",
+      "assets": [
+        "Oracle Contract",
+        "Registry Contract",
+        "Vault Factory Contract",
+        "Paraclear Contract",
+        "Staking",
+        "Assets Manager"
+      ],
+      "environment": "禁止公共主网；本地或测试网；禁止访问或修改其他用户数据。",
+      "summary": "已通过 Sherlock 页面核实 500,000 USDC 上限，Scope 当前为六项合约。官方文档指向此计划，但不等于登录、邮箱、JWT 接口全部在范围内。",
+      "next_step": "账号评估需另行确认 Web/API 范围；当前不执行生产账户验证。",
+      "sources": [
+        "https://audits.sherlock.xyz/bug-bounties/344",
+        "https://github.com/tradeparadex/paradex-docs/blob/main/fern/pages/security/bug-bounty.mdx"
+      ],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 12,
+      "name": "AlphaX",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 13,
+      "name": "Arcus",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    },
+    {
+      "id": 14,
+      "name": "TxFlow",
+      "reviewed": false,
+      "scope": "待核验",
+      "relevance": "未确认",
+      "assets": [],
+      "environment": "未确认",
+      "summary": "本轮尚未核验该平台的官方计划；不能据此判断是否存在赏金计划或漏洞。",
+      "next_step": "核对官方安全政策、精确资产和允许的测试环境。",
+      "sources": [],
+      "test_status": "未测试",
+      "finding": "无漏洞结论"
+    }
+  ],
+  "active_tests": 0,
+  "accounts_created": 0,
+  "findings": 0,
+  "limitation": "本记录只核验计划与范围，不证明任何平台存在或不存在漏洞。未发送攻击请求，未注册测试账户。"
+}
